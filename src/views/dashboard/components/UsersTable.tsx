@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { getUsersFromAPI } from '../../../redux/slices/dataSlice';
-import { RootState, AppDispatch } from 'redux/store';
+import { RootState, AppDispatch } from '../../../redux/store';
 
 import THeaderRow from '../../../components/dashboard/usertable/THeaderRow';
 import TRow from '../../../components/dashboard/usertable/TRow';

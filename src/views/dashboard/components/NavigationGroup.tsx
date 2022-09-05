@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { setPage } from '../../../redux/slices/dataSlice';
-import { AppDispatch, RootState } from 'redux/store';
+import { AppDispatch, RootState } from '../../../redux/store';
 
 import './style.css';
 
@@ -25,7 +25,7 @@ const NavigationGroup = () => {
       >
         Prev
       </button>
-      <p>
+      <p className='page-info'>
         Page: {page + 1} / {Math.max(pageLength, page + 1)}
       </p>
       <button onClick={() => navigateHandler(NEXT)} className='btn btn-next'>
