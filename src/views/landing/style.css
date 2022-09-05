@@ -1,0 +1,89 @@
+.landing {
+  max-width: 100vw;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: url('../../assets/background.jpg');
+}
+
+.landing .container {
+  padding: 5rem 10rem;
+  height: 100vh;
+  background-color: #000000cc;
+}
+
+.landing .container h1 {
+  text-align: center;
+}
+
+.landing .container .overview {
+  padding-top: 100px;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1280px) {
+  .landing {
+    max-height: fit-content;
+  }
+  .landing .container .overview {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+}
+
+.overview .description b {
+  font-size: 20px;
+}
+
+.overview .description desc {
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.overview .avatar {
+  width: 250;
+  height: 250;
+  border-radius: 250px;
+  border: 4px solid #565658;
+  padding: 6px;
+}
+
+.overview .applicant {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.overview .applicant p {
+  margin: 0px;
+  text-align: center;
+}
+
+.container .get-started {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.container .get-started .navbutton{
+  width: 240px;
+  padding: 14px 0px;
+  cursor: pointer;
+  background-color: #337750;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.container .get-started .navbutton:hover{
+  background-color: #459767;
+}

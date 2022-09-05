@@ -1,0 +1,46 @@
+.users-table {
+  width: 100%;
+  margin-top: 7vh;
+  min-height: 645px;
+  position: relative;
+}
+
+.button-group {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(46, 112, 61);
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(65, 160, 86);
+}
+
+.btn:disabled {
+  background-color: rgb(42, 73, 49);
+  cursor: not-allowed;
+}
+
+.users-table .table-body-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.button-group .page-info {
+  min-width: 110px;
+}

@@ -1,0 +1,37 @@
+.dashboard-page {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard-page .heading {
+  width: 100%;
+  text-align: center;
+}
+
+.dashboard-page .container {
+  padding: 3rem 8rem;
+}
+
+.dashboard-page .btn-back {
+  text-decoration: none;
+  color: white;
+  padding: 10px 0px;
+  width: 160px;
+  text-align: center;
+  position: fixed;
+  top: 40px;
+  left: 80px;
+  background-color: #a33535;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.dashboard-page .btn-back:hover {
+  background-color: #bd5a5a;
+}
+
+@media only screen and (max-width: 1200px) {
+  .dashboard-page .container {
+    padding: 2rem 5rem;
+  }
+}

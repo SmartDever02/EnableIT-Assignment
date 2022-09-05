@@ -1,0 +1,55 @@
+.table-row {
+  width: 100;
+  display: flex;
+  align-items: center;
+  background-color: #161618;
+}
+
+.table-row.row-even {
+  background-color: #181820;
+}
+
+.table-row.row-odd {
+  background-color: #252527;
+}
+
+.table-row span {
+  padding: 0.8rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-row span:nth-child(1) {
+  width: 4%;
+}
+
+.table-row span:nth-child(2) {
+  width: 10%;
+}
+
+.table-row span:nth-child(3) {
+  width: 20%;
+}
+
+.table-row span:nth-child(4) {
+  width: 10%;
+}
+
+.table-row span:nth-child(5) {
+  width: 20%;
+}
+
+.table-row span:nth-child(6) {
+  width: 10%;
+}
+
+.table-row span:nth-child(7) {
+  width: 16%;
+}
+
+.table-body-blur .table-row span {
+  color: transparent;
+  text-shadow: 0 0 12px white;
+}
